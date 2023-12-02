@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <!-- Add any additional CSS styles here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #top-nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: right;
+        }
+
+        #dashboard-container {
+            display: flex;
+            position: relative;
+        }
+
+        #left-nav {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+        }
+
+        #logout {
+            padding: 10px;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        #right-section {
+            display: flex;
+            flex-direction: column;
+            margin-left: auto; /* This aligns the right section to the right */
+        }
+
+        #chat-box {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            min-height: 150px;
+        }
+
+        #notification-box {
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            min-height: 150px;
+        }
+
+        #nav-links {
+            margin-bottom: 20px;
+        }
+
+        #nav-links a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #nav-links a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="top-nav">
+        <a href="#" id="logout">Logout</a>
+    </div>
+
+    <div id="dashboard-container">
+        <div id="left-nav">
+            <div id="nav-links">
+                <a href="#">Appointment</a>
+                <a href="#">Medical Records</a>
+                <a href="#">Create New Meeting</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- Add content for each tab here -->
+            <h2>Welcome to the Doctor Dashboard</h2>
+            <p>Content for the selected tab goes here.</p>
+        </div>
+
+        <div id="right-section">
+            <div id="chat-box">
+                <!-- Add chat content here -->
+                <h3>Chat Box</h3>
+                <p>Chat messages go here.</p>
+            </div>
+            
+            <div id="notification-box">
+                <!-- Add notification content here -->
+                <h3>Notifications</h3>
+                <p>Notification messages go here.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

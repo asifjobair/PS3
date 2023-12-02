@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <!-- Add any additional CSS styles here -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        #dashboard-container {
+            display: flex;
+        }
+
+        #left-nav {
+            width: 250px;
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #content {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #logout {
+            text-align: right;
+            padding: 10px;
+            background-color: #444;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 20px;
+        }
+
+        #nav-links {
+            margin-bottom: 20px;
+        }
+
+        #nav-links a {
+            display: block;
+            padding: 10px;
+            color: #fff;
+            text-decoration: none;
+            margin-bottom: 10px;
+            transition: background-color 0.3s;
+        }
+
+        #nav-links a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <a href="#" id="logout">Logout</a>
+
+    <div id="dashboard-container">
+        <div id="left-nav">
+            <div id="nav-links">
+                <a href="#">Manage Roles</a>
+                <a href="#">Create New User</a>
+                <a href="#">Master Setup</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- Add content for each tab here -->
+            <h2>Hello Admin</h2>
+            <p></p>
+        </div>
+    </div>
+</body>
+</html>
